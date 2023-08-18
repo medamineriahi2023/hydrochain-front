@@ -2,11 +2,10 @@ import {Component, OnInit} from '@angular/core';
 import {ModalDismissReasons, NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {JobService} from "../../core/services/job/job.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {ApplieService} from "../../core/services/applie/applie.service";
 import {Applie} from "../../core/models/Applie";
 import {MessagesModalService} from "../../core/services/alerts/swal-alert.service";
-
 
 @Component({
   selector: 'app-job-detail',
@@ -91,6 +90,8 @@ export class JobDetailComponent implements OnInit{
   ngOnInit(): void {
     this.jobService.getById(this.id).subscribe((e :any) =>  {this.job = e.data.attributes ; console.log(this.job)});
   }
+
+  oga
 
   applyAndClose() {
     this.modalService.dismissAll();
