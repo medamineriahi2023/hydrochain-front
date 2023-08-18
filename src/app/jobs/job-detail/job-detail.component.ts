@@ -92,6 +92,7 @@ export class JobDetailComponent implements OnInit{
   }
 
 
+
   applyAndClose() {
     this.modalService.dismissAll();
     let applie= new Applie();
