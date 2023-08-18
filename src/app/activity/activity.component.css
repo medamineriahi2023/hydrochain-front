@@ -1,0 +1,131 @@
+.act_container{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner {
+  width: 65%;
+  height: auto;
+  border-radius: 20px;
+  background: #BFECFF;
+  padding: 20px;
+  position: relative;
+}
+
+
+.title {
+  position: absolute;
+  font-size: 48px;
+  color: #0D083A;
+  font-weight: 700;
+  top: -2.7rem;
+  letter-spacing: 2px;
+}
+.anim {
+  position: absolute;
+  right: 0;
+  top: -1rem;
+  z-index: -1;
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transform-origin: center center;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: .6;
+  -webkit-animation: dance 4s alternate infinite;
+  animation: dance 4s alternate infinite;
+}
+
+
+
+@keyframes dance {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(25px, -25px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -25px, 25px);
+  }
+}
+
+.custom{
+padding: 20px;
+  max-width: 350px;
+  box-shadow: 0 8px 46px 0 rgba(3,15,39,.04);
+  border-radius: 10px;
+  background: white;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0D083A!important;
+  font-family: 'Maven Pro',sans-serif!important;
+}
+
+span {
+  color: #626262;
+}
+
+.primary_title {
+  font-size: 48px;
+  color: #0D083A;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.cube {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  box-shadow: 0 8px 46px 0 rgba(3,15,39,.1);
+  border-radius: 10px;
+  z-index: 999;
+  background: white;
+}
+.cube img {
+  position: absolute;
+  bottom: 0;
+  opacity: .1;
+  right: 0;
+  height: 80%;
+}
+
+.cube h2 {
+  font-size: 32px;
+  color: #02B2FD;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  opacity: 1!important;
+}
+
+.anim2 {
+  position: absolute;
+  left: -3rem;
+  bottom: -2.8rem;
+  z-index: -999;
+  opacity: .6;
+  -webkit-animation: dance 4s alternate infinite;
+  animation: dance 4s alternate infinite;
+}
+.banner2{
+  position: absolute;
+  height: 230px;
+  width: 100%;
+  background: #FEF5E4;
+  z-index: -999;
+}

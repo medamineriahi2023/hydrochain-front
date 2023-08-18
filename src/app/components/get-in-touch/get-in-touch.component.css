@@ -1,0 +1,174 @@
+
+.background-contact {
+  background-image: url(https://tezcoweb.com/template/nexigen/assets/images/home/get-in-touch-bg.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 85px;
+}
+
+.get-contact-left form input[type="text"], .get-contact-left form input[type="email"], .get-contact-left form textarea {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #D3D2D3;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #7A798B;
+  padding: 17px 25px;
+  margin-bottom: 20px;
+}
+
+.get-contact-left form input[type="text"]::-webkit-input-placeholder, .get-contact-left form input[type="email"]::-webkit-input-placeholder, .get-contact-left form textarea::-webkit-input-placeholder {
+  color: #7A798B;
+  font-size: 16px;
+}
+
+.get-contact-left form input[type="text"]::-moz-placeholder, .get-contact-left form input[type="email"]::-moz-placeholder, .get-contact-left form textarea::-moz-placeholder {
+  color: #7A798B;
+  font-size: 16px;
+}
+
+.get-contact-left form input[type="text"]:-ms-input-placeholder, .get-contact-left form input[type="email"]:-ms-input-placeholder, .get-contact-left form textarea:-ms-input-placeholder {
+  color: #7A798B;
+  font-size: 16px;
+}
+
+.get-contact-left form input[type="text"]::-ms-input-placeholder, .get-contact-left form input[type="email"]::-ms-input-placeholder, .get-contact-left form textarea::-ms-input-placeholder {
+  color: #7A798B;
+  font-size: 16px;
+}
+
+.get-contact-left form input[type="text"]::placeholder, .get-contact-left form input[type="email"]::placeholder, .get-contact-left form textarea::placeholder {
+  color: #7A798B;
+  font-size: 16px;
+}
+
+.get-contact-left form textarea {
+  resize: none;
+  height: 165px;
+  margin-bottom: 18px;
+}
+
+.get-contact-left {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 80.6px 105.701px rgba(51, 51, 51, 0.1);
+  box-shadow: 0px 80.6px 105.701px rgba(51, 51, 51, 0.1);
+  padding: 45px 40px;
+  border-radius: 20px;
+}
+
+.get-contact-left form label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #7A798B;
+  margin-bottom: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.get-contact-left form label a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: none;
+  color: #6140FF;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin-left: 5px;
+}
+.get-contact-left form label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #D3D2D3;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 14px;
+}
+.get-contact-left form label a:hover {
+  color: #D37302;
+}
+
+.btns.btn-get-touch {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 16px 28px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 24px 34px rgba(32, 70, 100, 0.1);
+  box-shadow: 0px 24px 34px rgba(32, 70, 100, 0.1);
+}
+
+.btns.btn-get-touch:hover::before {
+  border-radius: 4px;
+}
+
+.get-contact-right h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  color: #EFECFF;
+  margin-bottom: 25px;
+  word-break: break-word;
+}
+.get-contact-right p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #EFECFF;
+  margin-bottom: 0;
+}
+.get-contact-right {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 100px;
+  padding-left: 25px;
+  padding-right: 125px;
+}
+
+
+.btns {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #fff;
+  background-color: #000000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+  padding: 16px 36px;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+}
+.btns:hover::before {
+  background-color: #77e2f8;
+  border-radius: 8px;
+}

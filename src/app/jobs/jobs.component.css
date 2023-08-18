@@ -1,0 +1,97 @@
+body{
+  background-attachment:fixed;
+  background-color:#fff;
+  color:#6d6d6d;
+  font-family:Nunito,sans-serif;
+  font-size:16px;
+  line-height:1.642;
+  overflow-x:hidden;
+  transition:inherit;
+  -webkit-font-smoothing:antialiased
+}
+
+.bgc-fa{
+  background-color:#fafafa!important;
+  box-shadow:none
+}
+
+
+.ulockd-main-title{
+  position:relative;
+  margin-bottom:20px
+}
+.ulockd-main-title h3{
+  display:inline-block;
+  font-family:Nunito,sans-serif;
+  font-weight:600;
+  margin-top:0
+}
+.ulockd-main-title p{
+  margin-bottom:0
+}
+
+a.scrollToHome.text-thm:hover{
+  color:#44BBFF!important
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.primary_title {
+  color: #0D083A;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Source Sans Pro,Helvetica,sans-serif;
+  margin-bottom: 0px!important;
+}
+
+.anim3{
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transform-origin: center center;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: .6;
+  -webkit-animation: dance 4s alternate infinite;
+  animation: dance 4s alternate infinite;
+}
+
+.hero-animation .anim-hero-01,
+.hero-animation .anim-hero-02 {
+  position: absolute;
+  right: 50%;
+  top: 10%;
+}
+
+.hero-animation .anim-hero-01 {
+  top: 22%;
+  left: 25%;
+  -webkit-animation: dance 4s alternate infinite;
+  animation: dance 4s alternate infinite;
+}
+
+
+.hero-animation .anim-hero-02 {
+  top: 70%;
+  left: 20%;
+  -webkit-animation: dance 4s alternate infinite;
+  animation: dance 4s alternate infinite;
+}
+
+@keyframes dance {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(25px, -25px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -25px, 25px);
+  }
+}

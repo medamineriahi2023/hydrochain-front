@@ -1,0 +1,84 @@
+.single-feature {
+  text-align: center;
+  padding: 66px 20px 43px;
+  position: relative;
+  margin-top: 41px;
+}
+.single-feature .icon {
+  width: 83px;
+  height: 83px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -41px;
+  margin-left: -41px;
+}
+.single-feature .bg-image {
+  bottom: 0;
+  opacity: 0.06;
+  position: absolute;
+  right: 0;
+}
+.single-feature h4 {
+  color: #fff;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-bottom: 13px;
+  margin-bottom: 16px;
+}
+.single-feature h4::before {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background-color: #fff;
+  height: 1px;
+  width: 38px;
+  margin-left: -19px;
+  bottom: 0;
+  content: "";
+}
+.single-feature h4::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background-color: #fff;
+  height: 1px;
+  width: 56px;
+  margin-left: -28px;
+  bottom: 4px;
+  content: "";
+}
+.single-feature p {
+  color: #fff;
+  font-size: 13px;
+  line-height: 23px;
+}
+.single-feature.blue {
+  background-color: #0099FA;
+}
+.single-feature.blue img {
+  background-color: #0099FA;
+}
+.single-feature.black {
+  background-color: #292929;
+}
+.single-feature.black img {
+  background-color: #292929;
+}
+.single-feature.pitrol {
+  background-color: #174E7C;
+}
+.single-feature.pitrol img {
+  background-color: #174E7C;
+}
+
+.single-feature.gray {
+  background-color: #6A747D;
+}
+.single-feature.gray img {
+  background-color: #6A747D;
+}

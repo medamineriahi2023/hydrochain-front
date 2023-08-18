@@ -1,0 +1,156 @@
+h2, p {
+  font-family: Plus Jakarta Sans,sans-serif;
+  color: #434a54;
+}
+
+h3, .content-single h4, .content-single h5 {
+  margin-top: 20px;
+  color: #4f5e64;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.content-single p {
+  font-size: 16px;
+  line-height: 200%;
+  color: #4f5e64;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.content-single ul {
+  padding-left: 30px;
+  line-height: 32px;
+  font-size: 16px;
+  color: #4f5e64;
+  list-style: disc;
+}
+.job-overview {
+  border: thin solid #e0e6f7;
+  border-radius: 8px;
+  padding: 20px 30px 30px;
+  margin-bottom: 50px;
+}
+.mb-30 {
+  margin-bottom: 30px!important;
+}
+
+.pb-15 {
+  padding-bottom: 15px!important;
+}
+.border-bottom {
+  border-bottom: 1px solid #dee2e6!important;
+}
+
+
+
+
+.job-overview .sidebar-icon-item {
+  font-size: 18px;
+  color: #a0abb8;
+  min-width: 20px;
+}
+
+.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+
+.job-overview .sidebar-text-info .small-heading {
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.job-overview .text-description {
+  font-size: 16px;
+  color: #66789c;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.text-description {
+  font-size: 14px;
+  color: #66789c;
+  line-height: 22px;
+  display: inline-block;
+  width: 50%;
+  min-width: 120px;
+  max-width: 120px;
+}
+.mb-10 {
+  margin-bottom: 10px!important;
+}
+.custom-btn {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  position: relative;
+  font-size: 17px;
+  background: #333;
+  border: none;
+  color: #fff;
+}
+
+.custom-btn:hover {
+  letter-spacing: 0.25em;
+  background: #44BBFF;
+  color: #44BBFF;
+  box-shadow: 0 0 45px #44BBFF;
+}
+
+.custom-btn::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #222222;
+}
+
+.custom-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.custom-btn i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.custom-btn i::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #44BBFF;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.custom-btn:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.custom-btn i::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #44BBFF;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.custom-btn:hover i::after {
+  width: 20px;
+  left: 80%;
+}

@@ -1,0 +1,164 @@
+<app-header></app-header>
+<div class="d-flex justify-content-center" >
+  <div class="w-75 position-relative">
+    <div style="background-image: url('https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/thumb.png');width: 100%; height: 350px; border-radius: 30px; position: relative">
+      <div style="width: 100%; height: 100% ; background-image: linear-gradient(to right, rgba(68, 187, 255,.2), rgb(68, 187, 255,.2));border-radius: 15px;">
+
+      </div>
+    </div>
+      <div class="row mt-5">
+        <div class="col">
+          <h2>{{job?.name}}</h2>
+          <p>Fulltime</p>
+        </div>
+        <div class="col-auto">
+          <button class="custom-btn" (click)="open(content)">
+            <span>Postuler</span><i></i>
+          </button>
+        </div>
+
+        <ng-template #content let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Postuler pour ce poste</h4>
+            <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+          </div>
+          <div class="modal-body">
+            <form class="d-flex flex-column p-2 overflow-auto">
+                <mat-form-field appearance="outline">
+                  <mat-label>Nom :</mat-label>
+                  <input matInput placeholder="alex, ..." [formControl]="form.controls?.nom" required>
+                  <mat-error *ngIf="form.controls['nom'].invalid">
+                    Nom est obligatoire!
+                  </mat-error>
+                </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Prenom :</mat-label>
+                <input matInput placeholder="mario, ..." [formControl]="form.controls?.prenom" required>
+                <mat-error *ngIf="form.controls['prenom'].invalid">
+                  Prenom est obligatoire!
+                </mat-error>
+              </mat-form-field>
+
+
+              <mat-form-field appearance="outline">
+                <mat-label>Mobile :</mat-label>
+                <input matInput placeholder="+216 27 258 258" [formControl]="form.controls?.mobile" required>
+                <mat-error *ngIf="form.controls['mobile'].invalid">
+                  Mobile est obligatoire!
+                </mat-error>
+              </mat-form-field>
+
+
+              <mat-form-field appearance="outline">
+                <mat-label>Phone :</mat-label>
+                <input matInput placeholder="+216 70 258 258" [formControl]="form.controls?.phone" required>
+                <mat-error *ngIf="form.controls['phone'].invalid">
+                  Numéro de telephone est obligatoire!
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Email :</mat-label>
+                <input matInput placeholder="pat@example.com" [formControl]="form.controls?.email" required>
+                <mat-error *ngIf="form.controls['email'].invalid">
+                  Email est invalide
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Social Network and Web Links :</mat-label>
+                <input matInput placeholder="pat@example.com" [formControl]="form.controls?.links" required>
+                <mat-error *ngIf="form.controls['links'].invalid">
+                  Les liens sont invalide
+                </mat-error>
+              </mat-form-field>
+
+
+                <mat-label>Télécharger votre cv :</mat-label>
+                <button type="button" mat-raised-button (click)="fileInput.click()">Choose File</button>
+                <input hidden (change)="onFileSelected($event)" #fileInput [formControl]="form.controls?.file" type="file">
+                <span class="file-name">{{selectedFile?.name}}</span>
+                <mat-error *ngIf="form.controls['file'].invalid">il faut selectionner un cv</mat-error>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="applyAndClose()">Postuler maintenant</button>
+          </div>
+        </ng-template>
+
+
+
+
+
+      </div>
+      <div class="border-bottom pt-10 pb-10"></div>
+    <div class="job-overview mt-5"><h5 class="border-bottom pb-15 mb-30">Employment Information</h5>
+      <div class="row">
+        <div class="col-md-6 d-flex">
+          <div class="sidebar-icon-item"><img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/industry.svg" alt="jobBox"></div>
+          <div class="sidebar-text-info ml-10"><span class="text-description industry-icon mb-10">Industry</span><strong
+            class="small-heading">{{job?.industry}}</strong></div>
+        </div>
+        <div class="col-md-6 d-flex mt-sm-15">
+          <div class="sidebar-icon-item"><img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/job-level.svg" alt="jobBox"></div>
+          <div class="sidebar-text-info ml-10"><span
+            class="text-description joblevel-icon mb-10">Job level</span><strong class="small-heading">
+            {{job?.jobLevel}}
+          </strong></div>
+        </div>
+      </div>
+      <div class="row mt-25">
+        <div class="col-md-6 d-flex mt-sm-15">
+          <div class="sidebar-icon-item"><img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/salary.svg" alt="jobBox"></div>
+          <div class="sidebar-text-info ml-10"><span class="text-description salary-icon mb-10">Salary</span><strong
+            class="small-heading">{{job?.salary}}</strong></div>
+        </div>
+        <div class="col-md-6 d-flex">
+          <div class="sidebar-icon-item"><img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/experience.svg" alt="jobBox"></div>
+          <div class="sidebar-text-info ml-10"><span
+            class="text-description experience-icon mb-10">Experience</span><strong class="small-heading">
+            {{job?.experience}}
+          </strong></div>
+        </div>
+      </div>
+      <div class="row mt-25">
+        <div class="col-md-6 d-flex mt-sm-15">
+          <div class="sidebar-icon-item"><img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/job-type.svg" alt="jobBox"></div>
+          <div class="sidebar-text-info ml-10"><span class="text-description jobtype-icon mb-10">Job type</span><strong
+            class="small-heading">{{job?.jobType}}</strong></div>
+        </div>
+        <div class="col-md-6 d-flex mt-sm-15">
+          <div class="sidebar-icon-item"><img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/deadline.svg" alt="jobBox"></div>
+          <div class="sidebar-text-info ml-10"><span class="text-description mb-10">Deadline</span><strong
+            class="small-heading">10/08/2022</strong></div>
+        </div>
+      </div>
+      <div class="row mt-25">
+        <div class="col-md-6 d-flex mt-sm-15">
+          <div class="sidebar-icon-item"><img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/updated.svg" alt="jobBox"></div>
+          <div class="sidebar-text-info ml-10"><span class="text-description jobtype-icon mb-10">Updated</span><strong
+            class="small-heading">{{job?.updatedAt | date : 'dd/MM/yyyy'}}</strong></div>
+        </div>
+        <div class="col-md-6 d-flex mt-sm-15">
+          <div class="sidebar-icon-item"><img src="https://jobbox-nextjs-v3.vercel.app/assets/imgs/page/job-single/location.svg" alt="jobBox"></div>
+          <div class="sidebar-text-info ml-10"><span class="text-description mb-10">Location</span><strong
+            class="small-heading">{{job?.location?.data.attributes.name}}</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-single"><h4>Introduction :</h4>
+      <p>{{job?.introduction}}</p><h4>Essential Knowledge, Skills, and Experience</h4>
+     <p>
+       {{job?.skills}}
+     </p>
+      <h4>Preferred Experience</h4>
+      <p>
+        {{job?.preferredExperience}}
+      </p>
+      </div>
+
+  </div>
+</div>

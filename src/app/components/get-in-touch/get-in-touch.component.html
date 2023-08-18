@@ -1,0 +1,48 @@
+<section class="get-in-touch" style="padding-top: 50px">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="background-contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 order-md-0 order-1">
+                <div class="get-contact-left">
+                  <form #ngForm="ngForm">
+                    <input type="text" ngModel name="lastName" id="lastName" placeholder="Nom" required>
+                    <div *ngIf="ngForm.controls['lastName']?.touched && ngForm.controls['lastName']?.invalid">
+                      <p style="font-size: 12px; color: red" *ngIf="ngForm.controls['lastName'].errors['required']">le champ nom est obligatoire</p>
+                    </div>
+                    <input type="text" ngModel name="firstName" id="firstName" placeholder="Prénom" required>
+                    <div *ngIf="ngForm.controls['firstName']?.touched && ngForm.controls['firstName']?.invalid">
+                      <p style="font-size: 12px; color: red" *ngIf="ngForm.controls['firstName'].errors['required']">le champ prénom est obligatoire</p>
+                    </div>
+                    <input type="email" ngModel name="email" id="email" placeholder="Adresse email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+                    <div *ngIf="ngForm.controls['email']?.touched && ngForm.controls['email']?.invalid">
+                      <p style="font-size: 12px; color: red" *ngIf="ngForm.controls['email'].errors['required']">le champ email est obligatoire</p>
+                      <p style="font-size: 12px; color: red" *ngIf="ngForm.controls['email'].errors['pattern']">l'email est invalide</p>
+                    </div>
+                    <textarea ngModel name="message" placeholder="Message" required></textarea>
+                    <div *ngIf="ngForm.controls['message']?.touched && ngForm.controls['message']?.invalid">
+                      <p style="font-size: 12px; color: red" *ngIf="ngForm.controls['message'].errors['required']">le champ message est obligatoire</p>
+                    </div>
+                    <label for="check">
+                      <input ngModel type="checkbox" name="check" id="check" required>
+                      En cliquant ici, vous acceptez nos  <a href="#">termes et politique.</a>
+                    </label>
+                    <button type="submit" [disabled]="ngForm.invalid" (click)="submit(ngForm.value)" class="btns btn-get-touch">Envoyer le message</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6 order-md-1 order-0">
+                <div class="get-contact-right">
+                  <h2>Prenez contact avec nous pour  <br class="d-lg-block d-none"> le conseil</h2>
+                  <p>si vous recherchez des conseils et un soutien d'experts pour faire passer votre entreprise au niveau supérieur. ou si vous avez besoin d'aide pour trouver le cours de yoga adapté à vos besoins, n'hésitez pas à nous contacter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

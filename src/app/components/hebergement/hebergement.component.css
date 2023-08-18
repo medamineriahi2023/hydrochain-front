@@ -1,0 +1,37 @@
+.h-container {
+  background: #ECF0F2;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.heading-common h4 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #D37302;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.heading-common h2 {
+  font-size: 30px;
+  color: #0D083A;
+  font-weight: 500;
+  line-height: 57.6px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.s-btn {
+  margin-bottom: 60px;
+  background: #25B2EF;
+  color: white;
+  font-weight: 500;
+  padding: 15px 25px;
+  border: 0;
+  text-transform: uppercase;
+}

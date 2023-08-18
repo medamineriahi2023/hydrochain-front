@@ -1,0 +1,17 @@
+<div class="col-sm-12 col-lg-12">
+  <div class="fj_post" routerLink="detail/{{job.id}}">
+    <div class="details">
+      <h5 class="job_chedule text-thm mt0">{{job.attributes.jobType}}</h5>
+      <div class="thumb fn-smd">
+        <img class="img-fluid" style="width: 250px ; height: auto" src="http://localhost:1337{{job.attributes.image.data.attributes.url}}" alt="1.jpg">
+      </div>
+      <h4>{{job.attributes.name}}</h4>
+      <p>Posted {{job.attributes.publishedAt | date : 'dd MMMM'}} by <a class="text-thm" href="#">{{job.attributes.company}}</a></p>
+      <ul class="featurej_post">
+        <li class="list-inline-item"><span class="flaticon-location-pin"></span> <a href="#">{{job.attributes.location.data?.attributes.name}}</a></li>
+        <li class="list-inline-item"><span class="flaticon-price pl20"></span> <a href="#">{{job.attributes.salary}} per Month</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
